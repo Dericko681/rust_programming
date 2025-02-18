@@ -1,0 +1,1 @@
+/home/kunga-derick/projects/rust_programming/statistics/target/debug/statistics: /home/kunga-derick/projects/rust_programming/statistics/src/main.rs /home/kunga-derick/projects/rust_programming/statistics/src/mean.rs /home/kunga-derick/projects/rust_programming/statistics/src/median.rs /home/kunga-derick/projects/rust_programming/statistics/src/traitfile.rs

@@ -1,12 +1,12 @@
-fn
+fn 
 main(){
-    let name_string = "Dericko";
-    let age_float = 20;
-    let smart_bool =  true;
-    let height_float = 1.80;
+    let bills = 80000;
+    let salary:f64 = 300000.00;
+    println!("he earns {} salary and pays {} of bills", salary, bills);
 
-    println!("His name is{}", name_string );
-    println!("I am {} years old", age_float);
-    println!("i am a smart guy {}", smart_bool);
-    println!("i am {} metres tall", height_float);
+//mutable and immutable variables
+   let mut num::i32 = 45;
+   println!("the number is {}", num);
+   num::i32 = 67;
+   println!("the new number is {}", num);
 }

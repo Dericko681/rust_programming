@@ -1,0 +1,1 @@
+/home/kunga-derick/projects/rust_programming/generics/target/debug/generics: /home/kunga-derick/projects/rust_programming/generics/src/adt_list.rs /home/kunga-derick/projects/rust_programming/generics/src/linked_list.rs /home/kunga-derick/projects/rust_programming/generics/src/main.rs /home/kunga-derick/projects/rust_programming/generics/src/max_items.rs
