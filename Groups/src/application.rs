@@ -1,11 +1,16 @@
 use std::{collections::HashSet, fmt::Debug};
 
+use cli_table::{print_stdout, Table, WithTitle};
 use rand::seq::SliceRandom;
 
 use crate::{
     data_c::DataCollection,
     enums::labelling::Labelling,
-    models::{group::Group, student::Student, topics::Topic},
+    models::{
+        group::Group,
+        student::{self, Student},
+        topics::Topic,
+    },
     traits::{collect::Collect, gen_data_id::GenDataId},
 };
 
@@ -35,27 +40,42 @@ impl Application {
 
     pub fn run(&mut self) {
         println!("Enter new topics.");
+        let AppState {
+            topics, students, ..
+        } = &mut self.state;
 
         loop {
-            Self::collect_gen_data(&mut self.state.topics);
+            Self::collect_gen_data(topics);
 
             if Self::should_break() {
                 break;
             }
         }
+        Helper::display(topics.iter());
 
         println!("Enter student names.");
 
         loop {
-            Self::collect_gen_data(&mut self.state.students);
+            Self::collect_gen_data(students);
 
             if Self::should_break() {
                 break;
             }
         }
-
-        // Generate groups
+        Helper::display(students.iter());
         self.gen_groups();
+
+        let groups = self.state.groups.clone();
+        for group in groups {
+            let topic = group.get_topics();
+            let students = group.get_students();
+            Helper::display(vec![group].iter());
+            println!("{:?}", topic);
+            Helper::display(students.iter());
+        }
+
+        Helper::display(&self.state.groups.clone());
+        // Generate groups
     }
 
     fn gen_groups(&mut self) {
@@ -117,7 +137,7 @@ impl Application {
 
     fn should_break() -> bool {
         let proceed = DataCollection::input("Do you want to continue?(yes/no)[yes]:");
-        !proceed.to_lowercase().eq("no")
+        proceed.to_lowercase().eq("no")
     }
 
     fn label_gen(labelling: Labelling, groups_len: usize) -> String {
@@ -145,5 +165,11 @@ impl Helper {
                 panic!("Time went backward!")
             }
         }
+    }
+
+    pub fn display<T: Table + WithTitle>(table: T) {
+        // use cli_table::print_stdout;
+
+        let _ = print_stdout(table.with_title());
     }
 }

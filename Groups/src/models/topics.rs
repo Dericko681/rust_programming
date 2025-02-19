@@ -1,12 +1,20 @@
+use cli_table::Table;
+use cli_table::format::Justify;
+
 use crate::{
-    data_c::DataCollection, enums::difficulty::Difficulty, traits::{collect::Collect, gen_data_id::GenDataId},
+    data_c::DataCollection,
+    enums::difficulty::Difficulty,
+    traits::{collect::Collect, gen_data_id::GenDataId},
 };
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Table)]
 
 pub struct Topic {
+    #[table(title = "ID", justify = "Justify::Right")]
     id: u32,
+    #[table(title = "Title")]
     title: String,
+    #[table(title = "Difficulty")]
     difficulty: Difficulty,
 }
 
@@ -18,19 +26,19 @@ impl Topic {
             difficulty: Difficulty::Easy,
         }
     }
-    // pub fn set_title(&mut self, title: String) {
-    //     self.title = title
-    // }
-    // pub fn set_difficulty(&mut self, difficulty: Difficulty) {
-    //     self.difficulty = difficulty
-    // }
+    pub fn set_title(&mut self, title: String) {
+        self.title = title
+    }
+    pub fn set_difficulty(&mut self, difficulty: Difficulty) {
+        self.difficulty = difficulty
+    }
 
-    // pub fn get_title(&self) -> String {
-    //     self.title.clone()
-    // }
-    // pub fn get_difficulty(&self) -> Difficulty {
-    //     self.difficulty.clone()
-    // }
+    pub fn get_title(&self) -> String {
+        self.title.clone()
+    }
+    pub fn get_difficulty(&self) -> Difficulty {
+        self.difficulty.clone()
+    }
 }
 impl Collect for Topic {
     fn collect() -> Self {
@@ -40,7 +48,7 @@ impl Collect for Topic {
         //let prompt = Some("Enter topic title:".to_string());
         topic.title = DataCollection::input("Enter topic title:");
 
-       // let prompt = Some("Enter topic difficulty:".to_string());
+        // let prompt = Some("Enter topic difficulty:".to_string());
         let difficulty = DataCollection::input("Enter topic difficulty:");
         topic.difficulty = Difficulty::from(difficulty.as_str());
 
@@ -48,7 +56,7 @@ impl Collect for Topic {
     }
 }
 
-impl GenDataId<u32> for Topic{
+impl GenDataId<u32> for Topic {
     fn set_id(&mut self, id: u32) {
         self.id = id
     }

@@ -1,9 +1,12 @@
 use crate::{data_c::DataCollection, traits::{collect::Collect, gen_data_id::GenDataId}};
+use cli_table::{format::Justify, Table};
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Table)]
 pub struct Student {
+     #[table(title = "ID", justify = "Justify::Right")]
+     id: u32,
+      #[table(title = "Name")]
     name: String,
-    id: u32,
 }
 
 impl Student {
@@ -13,26 +16,13 @@ impl Student {
             name: String::from(""),
         }
     }
-    // pub fn set_id(&mut self, id: u32) {
-    //     self.id = id;
-    // }
-    // pub fn set_name(&mut self, name: String) {
-    //     self.name = name;
-    // }
-
-    // pub fn get_id(&self) -> u32 {
-    //     self.id
-    // }
-    // pub fn get_name(&self) -> String {
-    //     self.name.clone()
-    // }
+    
 }
 
 impl Collect for Student {
     fn collect() -> Self {
         let mut student = Self::new();
-        // println!("Enter topic. \n type done when completed");
-        // let prompt = Some("Enter Student's name ".to_string());
+       
         student.name = DataCollection::input("Enter Student's name ");
 
         student

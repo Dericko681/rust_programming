@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["main"],"mod":["application","data_c","enums","models","traits"]};

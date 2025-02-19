@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"derive":["Table"],"enum":["Color","ColorChoice"],"fn":["print_stderr","print_stdout"],"mod":["format"],"struct":["CellStruct","RowStruct","TableDisplay","TableStruct"],"trait":["Cell","Row","Style","Table","Title","WithTitle"]};

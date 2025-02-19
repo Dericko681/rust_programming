@@ -1,0 +1,1 @@
+searchState.loadedDescShard("cli_table_derive", 0, "Derive macros for <code>cli-table</code> crate.\nDerive macro to implementing <code>cli_table</code> traits")

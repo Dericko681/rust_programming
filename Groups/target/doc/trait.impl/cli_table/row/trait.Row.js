@@ -1,0 +1,9 @@
+(function() {
+    var implementors = Object.fromEntries([["Groups",[["impl <a class=\"trait\" href=\"cli_table/row/trait.Row.html\" title=\"trait cli_table::row::Row\">Row</a> for &amp;<a class=\"struct\" href=\"Groups/models/group/struct.Group.html\" title=\"struct Groups::models::group::Group\">Group</a>"],["impl <a class=\"trait\" href=\"cli_table/row/trait.Row.html\" title=\"trait cli_table::row::Row\">Row</a> for &amp;<a class=\"struct\" href=\"Groups/models/student/struct.Student.html\" title=\"struct Groups::models::student::Student\">Student</a>"],["impl <a class=\"trait\" href=\"cli_table/row/trait.Row.html\" title=\"trait cli_table::row::Row\">Row</a> for &amp;<a class=\"struct\" href=\"Groups/models/topics/struct.Topic.html\" title=\"struct Groups::models::topics::Topic\">Topic</a>"],["impl <a class=\"trait\" href=\"cli_table/row/trait.Row.html\" title=\"trait cli_table::row::Row\">Row</a> for <a class=\"struct\" href=\"Groups/models/group/struct.Group.html\" title=\"struct Groups::models::group::Group\">Group</a>"],["impl <a class=\"trait\" href=\"cli_table/row/trait.Row.html\" title=\"trait cli_table::row::Row\">Row</a> for <a class=\"struct\" href=\"Groups/models/student/struct.Student.html\" title=\"struct Groups::models::student::Student\">Student</a>"],["impl <a class=\"trait\" href=\"cli_table/row/trait.Row.html\" title=\"trait cli_table::row::Row\">Row</a> for <a class=\"struct\" href=\"Groups/models/topics/struct.Topic.html\" title=\"struct Groups::models::topics::Topic\">Topic</a>"]]],["cli_table",[]]]);
+    if (window.register_implementors) {
+        window.register_implementors(implementors);
+    } else {
+        window.pending_implementors = implementors;
+    }
+})()
+//{"start":57,"fragment_lengths":[1473,17]}

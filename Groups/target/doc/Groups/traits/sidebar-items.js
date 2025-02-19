@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["collect","gen_data_display","gen_data_id"]};
