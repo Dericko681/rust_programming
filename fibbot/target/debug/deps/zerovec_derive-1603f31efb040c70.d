@@ -1,0 +1,10 @@
+/home/kunga-derick/projects/rust_programming/fibbot/target/debug/deps/libzerovec_derive-1603f31efb040c70.so: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/make_ule.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/make_varule.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/ule.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/utils.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/varule.rs
+
+/home/kunga-derick/projects/rust_programming/fibbot/target/debug/deps/zerovec_derive-1603f31efb040c70.d: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/make_ule.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/make_varule.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/ule.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/utils.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/varule.rs
+
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/lib.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/make_ule.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/make_varule.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/ule.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/utils.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerovec-derive-0.10.3/src/varule.rs:
